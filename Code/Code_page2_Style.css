@@ -1,0 +1,58 @@
+﻿body
+{
+
+background-color: White;
+
+h1 {
+  color: Black;
+  text-align: center;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+/* Slideshow container */
+/*.slideshow-container {
+  max-width: auto;
+  max-height: auto;
+  position: relative;
+  
+}*/
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+}
+

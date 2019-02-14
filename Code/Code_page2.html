@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Code_page2_Style.css"> 
+	
+	
+    <title>
+	KittyPage
+	</title>
+
+</head>
+<body>
+
+
+<h1> Cats, Cats, Cats </h1>
+
+<br>
+<br>
+<br>
+
+<iframe width="1%" height="2" scrolling="no" frameborder="no" allow="autoplay" 
+<source src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/575433732&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+	
+	<div class="numbertext">1 / 7</div>
+	<img src="https://lh3.googleusercontent.com/-fKiL_lV881Tbm_BbNkFP-Ho2PbvebGUlDveXJFuQf0zHKjpIIqwZQbC16bK0TfMF9KoQjKRog0Z2pUC85H4i8irFmJpnCFMl_jl64RZTrN1olhtrc-5h2F8anMHMkugVhYizYulmQ=w2400" style="width: 70%; float; center;">
+	</div>
+
+
+
+	<div class="mySlides fade">
+	<div class="numbertext">2 / 7</div>
+	<img src="https://lh3.googleusercontent.com/BaxMDPsx5iMrEgQFW_GGXniRVVUgpkn8XxqRkiu6kmbani5C9sqq7D_dtk4KvxOZaRvMJkQZ-1l9-3-DHqhFgSe8R8VeKnbrXElvB0WvQ6lZkE-K7xtaXKWyrSBYgTemVnqeBqkNVQ=w2400" style="width: 70%; float; center;">
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">3 / 7</div>
+	<img src="https://lh3.googleusercontent.com/AIXCq2SO8i8THxdooYazHArpYRsA88stz20hJM__TbOq0uoAvAfv7Nb0QFm9L7YPv3Ai8NrYdOb4-JoFNwRecHHlaDxShYc96_-FvReKb5F3NSMpqPL1UEJezOGXI78WJSBRitPlpA=w2400" style="width: 70%; float; center;">
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">4 / 7</div>
+	<img src="https://lh3.googleusercontent.com/FGeQuyqQF_UuG1dIMLb2qyKrYPUaCZm5jlTuWCfrbnFlWHBGQiO7J6z0VEhlbEEcFvty-N6bizIW9jtxwWsAIOC8oc53dVEFB7MjJrMMxrmzM_n_55tF_l662k_L79l8_p3ZK5cUEA=w2400" style="width: 70%; float; center;" >
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">5 / 7</div>
+	<img src="https://lh3.googleusercontent.com/LJqRj_PeFKCIRyMYuGRLH3YMO9gZvIFMin1uJG2SdmlU2C4AYwxMSsZeEMvoegNjFRmdUNDVRt94VZ6Uko_-XoqQ9EjdhgEm_MKVWUikr_cLNaJYOygFk2B6ITIyYVI5GuxRc6nNpQ=w2400" style="width: 70%; float; center;">
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">6 / 7</div>
+	<img src="https://lh3.googleusercontent.com/YVOUc51UmIQ9qYcPiB-kKluNANMaCL9e17x4bOlEfMzz8cGj8qZonywp-InNfsotoT0bl8-5FIgTfghsWgpj-pBz9MH94FdeC4BbBwis_ODirC0tz3bLOhAu1ovOGpkgunFqos18dQ=w2400" style="width: 70%; float; center;" >
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">7 / 7</div>
+	<img src="https://lh3.googleusercontent.com/xMMLdv6fI7o6_ae3DvPt3XyqBFy-ApHkT7tjiVaru6smWWukIUtA9jp-viYZsKtMtoYw1e9rUvhAaQ2Sq3aaLfWmgjlfW8E04Q8SnPWcgz3nLP_rvXZn4h0Bg6Q0i8KYjzGlQ-2ttQ=w2400" style="width: 70%; float; center;">
+	</div>
+
+	
+
+	<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span>
+    <span class="dot"></span>
+	 <span class="dot"></span>
+	  <span class="dot"></span>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function setHalfVolume() {
+	autoplay: true
+	var myAudio = document.getElementById("audio");
+	myAudio.volume =0.2;
+}
+
+</script>
+
+
+
+
+
+
+
+	<br>
+	<br>
+	<br>
+	<a href= "Code_page1.html"> BACK</a>
+
+</body>
+</html>
